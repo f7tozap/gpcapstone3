@@ -6,8 +6,8 @@ terraform {
     }
   }
 backend "s3" {
-    bucket = "<BUCKET-NAME>"
-    key    = "states/terraform.tfstate"
+    bucket = "gpcapstone3"
+    key    = "capstone3/states/terraform.tfstate"
     region = "us-east-1"
   }
 }
