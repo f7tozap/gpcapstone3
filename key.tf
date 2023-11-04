@@ -1,6 +1,6 @@
 module "key_pair" {
   source = "terraform-aws-modules/key-pair/aws"
 
-  key_name   = "assignment"
+  key_name   = "gpcapstone3"
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCf1ap9eBM7nqrtDb6b4zTwGH+8Jkfs+mORwrN9EmO82I0h7hqw1ta8jkRlBS8BB68iwXXok3DC3Zchak4HxScOWQaU8rNKohtiVQ6dsAtA6ncOIQDJkJlVurMSP8yI0t/+2zsStjqLjKJorrKRx8NKcVW6yMGFt4Qt41mRVvCtvKr0EfuiXlMNKE1E2Hk7xQ1UJ/0KJNDu7BRkYcCj6BWMiQ1OPEkToEBLZdA8JaQhqPVKzqL4NLChNwyqgdEXoSdj9y3g1N3JrCb4QGbDDom/yEMWOPVt56N2R4rREJZl+VRMNCbpzqE1UdDF75gB23yaRc0sl+/ynAU8n6CRwhhoth8C5rU/88+ecw+9ivBipF6AkqakerLyENHyMXgUqKClEPD6EZpv5TkmoVfHgCHcd30QDY/SCCWZAmwaU2vH8ZqoxR8/eAe3EP4f9w+mgR0gWZTO0yFlohRG6Q6V76JrMt6d7vBSaMC4HJ2HUc3MpV0sT2RP8B5KY5uOoK8awic= f7tozap@LAPTOP-4M86773V"
 }
