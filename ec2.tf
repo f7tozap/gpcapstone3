@@ -33,4 +33,22 @@ module "app_instance" {
     Environment = "dev"
     Name = "App Instance"
   }
+} 
+module "jenkins_instance" {
+  source  = "terraform-aws-modules/ec2-instance/aws"
+
+  name = "jenkins-instance"
+  ami = "ami-0fc5d935ebf8bc3bc"
+
+  instance_type          = "t2.micro"
+  key_name               = module.key_pair.key_pair_name
+  monitoring             = true
+  vpc_security_group_ids = [module.private-sg.security_group_id]
+  subnet_id              = module.vpc.private_subnets[1]
+
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
+    Name = "jenkins Instance"
+  }
 }
